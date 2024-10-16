@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advancedcontrols">
+
+    <Button
+        android:id="@+id/btnLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="List View"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnS"
+        android:text="Spinner"
+        app:layout_constraintTop_toBottomOf="@+id/btnLV">
+    </Button>
+
+    <Button
+        android:id="@+id/btnSD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sliding Drawer"
+        app:layout_constraintTop_toBottomOf="@+id/btnS">
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnSD"
+        android:text="Auto Complete"
+        android:id="@+id/btnAC">
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGV"
+        android:text="GridView"
+        app:layout_constraintTop_toBottomOf="@+id/btnAC">
+
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTS"
+        android:text="Time Selection"
+        app:layout_constraintTop_toBottomOf="@+id/btnGV">
+
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPG"
+        android:text="Picture Gallery"
+        app:layout_constraintTop_toBottomOf="@+id/btnTS">
+
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTabS"
+        android:text="Tab Selector"
+        app:layout_constraintTop_toBottomOf="@+id/btnPG">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        app:layout_constraintTop_toBottomOf="@+id/btnTabS">
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnM"
+        android:id="@+id/btnback"
+        android:text="Back"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

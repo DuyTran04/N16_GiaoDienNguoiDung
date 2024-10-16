@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomLayout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Đăng Nhập"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        android:id="@+id/txtdangnhap"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Đăng nhập"
+        app:layout_constraintTop_toBottomOf="@+id/txtdangnhap"/>
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:inputType="numberPassword"
+        android:hint="Mật Khẩu"
+        app:layout_constraintTop_toBottomOf="@id/editTextText3"/>
+
+    <Button
+        android:id="@+id/btndangnhap"
+        android:layout_width="132dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:text="Hoàn Tất"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword"
+        tools:layout_editor_absoluteX="140dp"></Button>
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="160dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btndangnhap" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
